@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extraction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Extraction Results</h1>
+        {% for page in data %}
+            <div class="page-section">
+                <h2>Page {{ page.page }}</h2>
+                <p>{{ page.text }}</p>
+                {% if page.images %}
+                    <div class="image-grid">
+                        {% for img in page.images %}
+                            <img src="{{ img }}" alt="Extracted Image">
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

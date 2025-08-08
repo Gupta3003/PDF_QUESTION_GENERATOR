@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.upload-box {
+    border: 2px dashed #4a90e2;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    background: #f0f8ff;
+    cursor: pointer;
+}
+
+.upload-box:hover {
+    background: #e6f3ff;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #357ABD;
+}
+
+.page-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-grid img {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 200px;
+}

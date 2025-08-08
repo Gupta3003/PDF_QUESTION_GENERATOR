@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Content Extraction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Content Extraction Tool</h1>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <div class="upload-box">
+                <p>Drag & Drop your PDF here or click to select</p>
+                <input type="file" name="pdf_file" accept="application/pdf" required>
+            </div>
+            <button type="submit">Extract Content</button>
+        </form>
+    </div>
+</body>
+</html>
